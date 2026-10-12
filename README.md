@@ -1,1 +1,1 @@
-# shopion-product-demo
+# ecommerce-product-demo
