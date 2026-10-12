@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Commerce Product</title>
+</head>
+<body>
+  <h1>E-Commerce Product Details</h1>
+  <p id="product">Loading product...</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('productId') || '12345';
+
+    document.getElementById('product').textContent =
+      `Product ${productId}`;
+  </script>
+</body>
+</html>
